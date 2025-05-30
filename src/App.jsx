@@ -1,4 +1,4 @@
-import { Header, ProgressBar, Details } from "./components/Barrel";
+import { Header, ProgressBar, Details, Button } from "./components/Barrel";
 
 export default function App() {
   return (
@@ -9,6 +9,10 @@ export default function App() {
       </div>
       <div className="resume-details">
         <Details />
+        <div className="details-buttons">
+          <Button buttonName={"next"} />
+          <Button buttonName={"next"} buttonHighlight={true} />
+        </div>
       </div>
     </>
   );
