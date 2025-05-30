@@ -4,10 +4,12 @@ export default function Details({ sectionHeading }) {
   return (
     <>
       <h1>{sectionHeading}</h1>
-      <TextInput />
-      <MultiLineInput />
-      <PictureInput />
-      <DateInput />
+      <TextInput fieldName={"Company Name"} required={true} />
+      <TextInput fieldName={"Position Title"} required={true} />
+      <MultiLineInput fieldName={"Main Responsibilities"} />
+      <MultiLineInput fieldName={"Reference"} />
+      <DateInput fieldName={"Date(From)"} required={true} />
+      <DateInput fieldName={"Date(to)"} required={true} />
     </>
   );
 }

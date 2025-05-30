@@ -1,0 +1,94 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+:root {
+  --background-color: #422f7e;
+  --gray-background: #d9d9d9;
+  --gray-background-2: #5d5d5d;
+  --gradient: linear-gradient(#4535d7, #c3bfec, #4534d7);
+}
+
+@font-face {
+  font-family: "DMSans";
+  src: url(/public/Fonts/DMSans_18pt-Regular.woff2) format("woff2"),
+    url(/public/Fonts/DMSans_18pt-Regular.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Inika";
+  src: url(/public/Fonts/Inika-Regular.woff2) format("woff2"),
+    url(/public/Fonts/Inika-Regular.woff) format("woff");
+}
+
+@font-face {
+  font-family: "InstrumentSans";
+  src: url(/public/Fonts/InstrumentSans_Condensed-Regular.woff2) format("woff2"),
+    url(/public/Fonts/InstrumentSans_Condensed-Regular.woff) format("woff");
+}
+
+@font-face {
+  font-family: "SourceSerif";
+  src: url(/public/Fonts/SourceSerif4_18pt-SemiBold.woff2) format("woff2"),
+    url(/public/Fonts/SourceSerif4_18pt-SemiBold.woff) format("woff");
+}
