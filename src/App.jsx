@@ -1,9 +1,10 @@
 import { Header, ProgressBar, Details, Button } from "./components/Barrel";
 import "./styles/general.css";
+import "./styles/app.css";
 
 export default function App() {
   return (
-    <>
+    <div className="resume">
       <div className="resume-header">
         <Header />
         <ProgressBar />
@@ -15,6 +16,6 @@ export default function App() {
           <Button buttonName={"submit"} buttonHighlight={true} />
         </div>
       </div>
-    </>
+    </div>
   );
 }

@@ -1,0 +1,28 @@
+.resume {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  grid-template-areas: "head details";
+}
+
+.resume-header {
+  grid-area: head;
+  background-color: var(--background-color);
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 16px;
+}
+
+.resume-details {
+  grid-area: details;
+  display: grid;
+  grid-template-rows: 1fr 100px;
+}
+
+.resume-details .details-buttons {
+  justify-self: end;
+  margin: 16px;
+  display: flex;
+  gap: 20px;
+}

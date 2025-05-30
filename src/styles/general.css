@@ -71,24 +71,24 @@ h6 {
 
 @font-face {
   font-family: "DMSans";
-  src: url(/public/Fonts/DMSans_18pt-Regular.woff2) format("woff2"),
+  src: url(/Fonts/DMSans_18pt-Regular.woff2) format("woff2"),
     url(/public/Fonts/DMSans_18pt-Regular.woff) format("woff");
 }
 
 @font-face {
   font-family: "Inika";
-  src: url(/public/Fonts/Inika-Regular.woff2) format("woff2"),
+  src: url(/Fonts/Inika-Regular.woff2) format("woff2"),
     url(/public/Fonts/Inika-Regular.woff) format("woff");
 }
 
 @font-face {
   font-family: "InstrumentSans";
-  src: url(/public/Fonts/InstrumentSans_Condensed-Regular.woff2) format("woff2"),
+  src: url(/Fonts/InstrumentSans_Condensed-Regular.woff2) format("woff2"),
     url(/public/Fonts/InstrumentSans_Condensed-Regular.woff) format("woff");
 }
 
 @font-face {
   font-family: "SourceSerif";
-  src: url(/public/Fonts/SourceSerif4_18pt-SemiBold.woff2) format("woff2"),
+  src: url(/Fonts/SourceSerif4_18pt-SemiBold.woff2) format("woff2"),
     url(/public/Fonts/SourceSerif4_18pt-SemiBold.woff) format("woff");
 }

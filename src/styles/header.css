@@ -1,0 +1,22 @@
+.resume-header header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.resume-header header h1 {
+  font-family: "Inika";
+  font-size: 2.25rem;
+  letter-spacing: 0.125rem;
+}
+
+.resume-header header hr {
+  width: 75%;
+}
+
+.resume-header header p {
+  font-family: "SourceSerif";
+  font-size: 1.25rem;
+  text-align: center;
+}
