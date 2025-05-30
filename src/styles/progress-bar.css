@@ -1,0 +1,54 @@
+/* CSS for both Progress bar and their Respective Progress Icons */
+
+.resume-header .progress-bar {
+  flex: 2 1 auto;
+  padding: 16px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+.resume-header .progress-bar .progress-icon {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.resume-header .progress-bar .progress-icon .icon {
+  height: 90px;
+  width: 90px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.resume-header .progress-bar .progress-icon .icon p {
+  color: var(--background-color);
+  font-family: "SourceSerif";
+  font-size: 2.25rem;
+}
+
+.resume-header .progress-bar .progress-icon h2 {
+  flex: 2 1 auto;
+  font-size: 36px;
+}
+
+.resume-header .progress-bar .progress-line {
+  width: 8px;
+  height: 12%;
+  background-color: white;
+  margin-left: 40px;
+}
+
+/* Progress line and Icon after adding completed class */
+
+.resume-header .progress-bar .progress-icon .icon.completed {
+  border: 12px solid transparent;
+  background: linear-gradient(white, white) padding-box, var(--gradient) border-box;
+}
+
+.resume-header .progress-bar .progress-line.completed{
+    background: var(--gradient);
+}

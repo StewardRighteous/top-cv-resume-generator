@@ -1,4 +1,5 @@
 import ProgressIcon from "./ProgressIcon";
+import "../styles/progress-bar.css";
 
 export default function ProgressBar() {
   return (
