@@ -1,4 +1,5 @@
 import Header from "./Header";
 import ProgressBar from "./ProgressBar";
+import Details from "./Details";
 
-export { Header, ProgressBar };
+export { Header, ProgressBar, Details };

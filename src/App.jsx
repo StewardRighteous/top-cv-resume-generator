@@ -1,4 +1,4 @@
-import { Header, ProgressBar } from "./components/Barrel";
+import { Header, ProgressBar, Details } from "./components/Barrel";
 
 export default function App() {
   return (
@@ -7,7 +7,9 @@ export default function App() {
         <Header />
         <ProgressBar />
       </div>
-      <div className="resume-details"></div>
+      <div className="resume-details">
+        <Details />
+      </div>
     </>
   );
 }
