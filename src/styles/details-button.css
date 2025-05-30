@@ -1,0 +1,20 @@
+.resume-details .details-buttons {
+  justify-self: end;
+  margin: 16px;
+  display: flex;
+  gap: 20px;
+}
+
+.resume-details .details-buttons button {
+  width: 170px;
+  height: 56px;
+  font-size: 1.5rem;
+  background-color: var(--gray-background);
+  text-transform: uppercase;
+  font-family: "DMSans";
+}
+
+.resume-details .details-buttons button.highlight {
+  background-color: var(--background-color);
+  color: white;
+}

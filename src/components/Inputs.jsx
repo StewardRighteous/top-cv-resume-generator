@@ -1,34 +1,35 @@
 export function TextInput({ fieldName, required = false }) {
   return (
-    <label htmlFor={fieldName}>
-      {fieldName}
+    <div className="input-field">
+      <label htmlFor={fieldName}>{fieldName}</label>
       <input type="text" required={required} />
-    </label>
+    </div>
   );
 }
 
 export function MultiLineInput({ fieldName }) {
   return (
-    <label htmlFor={fieldName}>
-      {fieldName}
+    <div className="input-field multi-line">
+      <label htmlFor={fieldName}>{fieldName}</label>
       <textarea name={fieldName} id={fieldName}></textarea>
-    </label>
+    </div>
   );
 }
 
 export function DateInput({ fieldName, idName }) {
   return (
-    <label htmlFor={idName}>
-      {fieldName}
+    <div className="input-field date">
+      <label htmlFor={idName}>{fieldName}</label>
       <input type="date" name={fieldName} id={idName} />
-    </label>
+    </div>
   );
 }
 
 export function PictureInput() {
   return (
-    <label htmlFor="profile-picture">
+    <div className="input-field pfp">
+      <label htmlFor="profile-picture"></label>
       <input type="file" name="profile-picture" id="profile-picture" />
-    </label>
+    </div>
   );
 }

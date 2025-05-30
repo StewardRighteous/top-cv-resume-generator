@@ -1,0 +1,37 @@
+/* CSS for Details section and its respective Input Fields */
+
+.resume-details{
+    align-self: center;
+}
+
+.resume-details .details {
+    align-self: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 60px repeat(3, 1fr);
+  font-family: "InstrumentSans";
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  padding: 16px;
+  margin-top: 96px;
+  margin-bottom: 80px;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.resume-details .details h1 {
+  grid-column: 1/-1;
+  font-size: 2.25rem;
+  letter-spacing: 0px;
+}
+
+.resume-details .details .input-field {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 4px;
+}
+
+.resume-details .details .input-field input,
+.resume-details .details .input-field textarea{
+    background-color: var(--gray-background);
+}

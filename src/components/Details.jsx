@@ -1,4 +1,5 @@
 import { TextInput, MultiLineInput, PictureInput, DateInput } from "./Inputs";
+import "../styles/details.css";
 
 export default function Details({ sectionHeading }) {
   return (

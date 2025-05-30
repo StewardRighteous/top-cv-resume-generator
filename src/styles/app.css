@@ -17,12 +17,5 @@
 .resume-details {
   grid-area: details;
   display: grid;
-  grid-template-rows: 1fr 100px;
-}
-
-.resume-details .details-buttons {
-  justify-self: end;
-  margin: 16px;
-  display: flex;
-  gap: 20px;
+  grid-template-rows: 1fr 80px;
 }
