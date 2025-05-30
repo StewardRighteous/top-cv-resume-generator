@@ -32,7 +32,7 @@
 
 .resume-header .progress-bar .progress-icon h2 {
   flex: 2 1 auto;
-  font-size: 36px;
+  font-size: 2.25rem;
 }
 
 .resume-header .progress-bar .progress-line {
@@ -46,9 +46,31 @@
 
 .resume-header .progress-bar .progress-icon .icon.completed {
   border: 12px solid transparent;
-  background: linear-gradient(white, white) padding-box, var(--gradient) border-box;
+  background: linear-gradient(white, white) padding-box,
+    var(--gradient) border-box;
 }
 
-.resume-header .progress-bar .progress-line.completed{
-    background: var(--gradient);
+.resume-header .progress-bar .progress-line.completed {
+  background: var(--gradient);
+}
+
+@media screen and (width <=1280px) {
+  .resume-header .progress-bar {
+    flex-flow: row nowrap;
+    gap: 16px;
+  }
+
+  .resume-header .progress-bar .progress-icon {
+    flex-direction: column;
+    width: 30%;
+  }
+
+  .resume-header .progress-bar .progress-line {
+    display: none;
+  }
+
+  .resume-header .progress-bar .progress-icon h2 {
+    flex: 1 1 auto;
+    font-size: 0.75rem;
+  }
 }

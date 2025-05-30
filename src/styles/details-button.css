@@ -18,3 +18,12 @@
   background-color: var(--background-color);
   color: white;
 }
+
+@media screen and (width <=1280px) {
+  .resume-details .details-buttons {
+    flex-direction: column;
+    justify-self: center;
+    gap: 12px;
+    padding: 8px;
+  }
+}

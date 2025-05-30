@@ -20,3 +20,13 @@
   font-size: 1.25rem;
   text-align: center;
 }
+
+@media screen and (width <=1280px) {
+  .resume-header header h1{
+    font-size: 1.5rem;
+  }
+
+  .resume-header header p {
+    font-size: 1rem;
+  }
+}

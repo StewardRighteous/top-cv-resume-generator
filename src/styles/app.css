@@ -19,3 +19,22 @@
   display: grid;
   grid-template-rows: 1fr 80px;
 }
+
+@media screen and (width <=1280px) {
+  .resume {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "head"
+      "details";
+  }
+
+  .resume-header {
+    height: max-content;
+    padding: 8px;
+  }
+
+  .resume-details{
+      grid-template-rows: 1fr 160px;
+  }
+}
