@@ -125,7 +125,7 @@ export default function App() {
   } else {
     secondButtonDetails.buttonName = "print";
     secondButtonDetails.buttonHighlight = true;
-    secondButtonDetails.buttonFunction = () => {};
+    secondButtonDetails.buttonFunction = () => {window.print()};
   }
 
   function getDetailsPage() {

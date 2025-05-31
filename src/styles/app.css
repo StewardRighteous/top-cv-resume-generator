@@ -34,7 +34,35 @@
     padding: 8px;
   }
 
-  .resume-details{
-      grid-template-rows: 1fr 160px;
+  .resume-details {
+    grid-template-rows: 1fr 160px;
+  }
+}
+
+@media print {
+  @page {
+    margin: 0;
+  }
+
+  .resume {
+    grid-template-columns: 1fr;
+    grid-template-areas: "details";
+  }
+
+  .resume .resume-header {
+    display: none;
+  }
+
+  .resume .resume-details {
+    display: block;
+  }
+
+  .resume .resume-details .details-buttons {
+    display: none;
+  }
+
+  .resume .resume-details .final-resume {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
   }
 }

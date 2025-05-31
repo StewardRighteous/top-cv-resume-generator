@@ -23,7 +23,7 @@
 }
 
 @media screen and (width <=1280px) {
-  .resume-header header h1{
+  .resume-header header h1 {
     font-size: 1.5rem;
   }
 
