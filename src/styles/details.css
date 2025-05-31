@@ -41,6 +41,10 @@
   color: red;
 }
 
+.resume-details .details .input-field input[type="file"] {
+  width: 432px;
+}
+
 @media screen and (width <=800px) {
   .resume-details .details {
     grid-template-columns: 1fr;
