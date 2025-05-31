@@ -28,8 +28,13 @@ export function DateInput({ fieldName, idName }) {
 export function PictureInput() {
   return (
     <div className="input-field pfp">
-      <label htmlFor="profile-picture"></label>
-      <input type="file" name="profile-picture" id="profile-picture" />
+      <label htmlFor="profile-picture">Picture</label>
+      <input
+        type="file"
+        name="profile-picture"
+        id="profile-picture"
+        accept="image/png, image/jpeg, image/jpg"
+      />
     </div>
   );
 }
