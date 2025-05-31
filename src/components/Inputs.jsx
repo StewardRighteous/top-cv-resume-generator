@@ -14,7 +14,10 @@ export function Input({
 
   return (
     <div className="input-field">
-      <label htmlFor={fieldName}>{fieldName}</label>
+      <label htmlFor={fieldName}>
+        {fieldName}
+        <span className="required">{required ? " (required)" : ""}</span>
+      </label>
       <input
         type={type}
         required={required}

@@ -36,6 +36,10 @@
   background-color: var(--gray-background);
 }
 
+.resume-details .details .input-field label span.required {
+  color: red;
+}
+
 @media screen and (width <=1280px) {
   .resume-details .details {
     grid-template-columns: 1fr;

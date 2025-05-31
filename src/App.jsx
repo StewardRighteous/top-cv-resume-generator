@@ -8,7 +8,6 @@ import "./styles/general.css";
 import "./styles/app.css";
 import { useState } from "react";
 
-// TODO: Check if all data is received and show Resume
 // TODO: Build and Design Resume Page
 
 export default function App() {
@@ -54,6 +53,7 @@ export default function App() {
           resumeData.find((elem) => elem.id == notFilled[0]).fieldName
         }`
       );
+
       if (notFilled[0] <= 6) {
         setCurrentPage(0);
       } else if (notFilled[0] <= 12) {
@@ -61,6 +61,11 @@ export default function App() {
       } else if (notFilled[0] <= 18) {
         setCurrentPage(2);
       }
+      alert(
+        `Please fill ${
+          resumeData.find((elem) => elem.id == notFilled[0]).fieldName
+        }`
+      );
     }
   }
 
