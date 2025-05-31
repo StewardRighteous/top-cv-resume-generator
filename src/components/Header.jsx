@@ -1,11 +1,11 @@
 import "../styles/header.css";
 
-export default function Header() {
+export default function Header({ instruction }) {
   return (
     <header>
       <h1>Resume Builder</h1>
       <hr />
-      <p>Fill out the details to generate your Resume </p>
+      <p>{instruction}</p>
     </header>
   );
 }
