@@ -1,0 +1,45 @@
+.resume-details .final-resume {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 8px;
+}
+
+.final-resume .resume-card {
+  padding: 16px;
+  margin: 16px;
+  background-color: var(--gray-background);
+  border-radius: 8px;
+  font-family: "SourceSerif";
+  border: 2px solid var(--background-color);
+}
+
+.final-resume .resume-card.profile-card {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.final-resume .resume-card img {
+  height: 180px;
+  width: 180px;
+  border-radius: 50%;
+}
+
+.final-resume .resume-card h1 {
+  font-size: 2.25rem;
+}
+
+.final-resume .resume-card p {
+  font-family: "Times New Roman";
+  font-size: 1.2rem;
+}
+
+@media (width <=800px) {
+  .resume-details .final-resume {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+  }
+}

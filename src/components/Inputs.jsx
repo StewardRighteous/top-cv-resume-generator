@@ -51,9 +51,7 @@ export function MultiLineInput({ fieldName, details, changeDetails, id }) {
 export function PictureInput({ details, changeDetails, id }) {
   function handleInput(e) {
     const detailNewCopy = [...details];
-    detailNewCopy.find((elem) => elem.id == id).value = URL.createObjectURL(
-      e.target.value
-    );
+    detailNewCopy.find((elem) => elem.id == id).path = e.target.files[0];
     changeDetails(detailNewCopy);
   }
 
@@ -66,7 +64,6 @@ export function PictureInput({ details, changeDetails, id }) {
         id="profile-picture"
         accept="image/png, image/jpeg, image/jpg"
         onChange={handleInput}
-        value={details.find((elem) => elem.id == id).value}
       />
     </div>
   );

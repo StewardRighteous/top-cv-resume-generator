@@ -1,4 +1,10 @@
-import { Header, ProgressBar, Details, Button } from "./components/Barrel";
+import {
+  Header,
+  ProgressBar,
+  Details,
+  Button,
+  Resume,
+} from "./components/Barrel";
 import {
   generalPageElements,
   experiencePageElements,
@@ -7,8 +13,6 @@ import {
 import "./styles/general.css";
 import "./styles/app.css";
 import { useState } from "react";
-
-// TODO: Build and Design Resume Page
 
 export default function App() {
   const formData = [];
@@ -24,8 +28,6 @@ export default function App() {
     "Fill out the details to generate your Resume"
   );
 
-  console.log(resumeData);
-
   function prevPage() {
     setCurrentPage(currentPage - 1);
   }
@@ -35,6 +37,7 @@ export default function App() {
   }
 
   function goToFirstPage() {
+    setInstruction("Fill out the details to generate your Resume");
     setCurrentPage(0);
   }
 
@@ -66,6 +69,9 @@ export default function App() {
           resumeData.find((elem) => elem.id == notFilled[0]).fieldName
         }`
       );
+    } else {
+      setCurrentPage(3);
+      setInstruction("Your Resume is Ready! \nClick Print to Download");
     }
   }
 
@@ -112,10 +118,29 @@ export default function App() {
     secondButtonDetails.buttonName = "next";
     secondButtonDetails.buttonFunction = nextPage;
     secondButtonDetails.buttonHighlight = true;
-  } else {
+  } else if (currentPage == 2) {
     secondButtonDetails.buttonName = "submit";
-    secondButtonDetails.buttonHighlight = true;
     secondButtonDetails.buttonFunction = submitData;
+    secondButtonDetails.buttonHighlight = true;
+  } else {
+    secondButtonDetails.buttonName = "print";
+    secondButtonDetails.buttonHighlight = true;
+    secondButtonDetails.buttonFunction = () => {};
+  }
+
+  function getDetailsPage() {
+    if (currentPage <= 2) {
+      return (
+        <Details
+          sectionHeading={detailsSection.sectionName}
+          elements={detailsSection.sectionElements}
+          changeDetails={setResumeData}
+          details={resumeData}
+        />
+      );
+    } else {
+      return <Resume details={resumeData} />;
+    }
   }
 
   return (
@@ -125,12 +150,7 @@ export default function App() {
         <ProgressBar progress={currentPage} />
       </div>
       <div className="resume-details">
-        <Details
-          sectionHeading={detailsSection.sectionName}
-          elements={detailsSection.sectionElements}
-          changeDetails={setResumeData}
-          details={resumeData}
-        />
+        {getDetailsPage()}
         <div className="details-buttons">
           <Button
             buttonName={firstButtonDetails.buttonName}
